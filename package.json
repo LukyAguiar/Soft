@@ -1,0 +1,22 @@
+{
+  "name": "soft",
+  "version": "1.0.0",
+  "description": "desenvolvimento de um bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukyAguiar/Soft.git"
+  },
+  "keywords": [
+    "teste123"
+  ],
+  "author": "Lucas Aguiar e Thiago Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukyAguiar/Soft/issues"
+  },
+  "homepage": "https://github.com/LukyAguiar/Soft#readme"
+}
