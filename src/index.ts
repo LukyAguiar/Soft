@@ -1,6 +1,7 @@
 import express, {Request, Response, NextFunction} from 'express';
 import usersRoute  from './routes/users.route';
 import billetRoute  from './routes/users.route';
+import statusRoute from './routes/status.route';
 
 const app = express(); 
 
@@ -8,13 +9,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.get('/status', (req: Request, res:Response, next:NextFunction) => {
-        res.status(200).send({foo:'Sucesso'})
-});
-
 // Configurações de Rotas 
 app.use(usersRoute); // Rota dos Usuarios {Cadastro & Busca de cadastro}
 app.use(billetRoute); // Rota dos Boletos {Cadastro}
+app.use(statusRoute);
 
 // Inicialização do servidor 
 app.listen(3000, () => {
